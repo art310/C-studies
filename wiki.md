@@ -1,12 +1,11 @@
-hello this is art, I decided to dive deeper into the C language at 31-10-2026, and in order to better memorize my studies i thought that its best to write it down
-------------------------------------------------------------------------------------------------------
--! Important Info about Syntax:
+## hello this is art, I decided to dive deeper into the C language at 31-10-2026, and in order to better memorize my studies i thought that its best to write it down
+### Important Info about Syntax: <br>
 #include - is a directive that takes contents of a file and places it in the output which is then handed to the C compiler.
 stdio.h - is a header allowing usage of standard functions, like printf and other stuff
 int main(){} - is the entry point of a C program. at the end returns 0 if success, or 1 if failed
 {} - are code blocks for int main and void functions and other
 
-Pointers:
+### Pointers: <br>
 Pointers - are variables that point to a memory address of another variable.
 After making a pointer, its now possible to get the value stored in a certain memory address, which the
 pointer holds. This is done by the Dereference operator (*):
@@ -18,7 +17,7 @@ In order to declare a pointer variable:
   int myAge = 50;
   int* ptr = &myAge // (*) is used to define it as a pointer, (&) is used to get the memory address and assign it to the pointer
 
-Format Specifiers:
+### Format Specifiers: <br>
 %c - characters, single or array
 %d - signed integer
 %f - for floats
@@ -28,17 +27,17 @@ Format Specifiers:
 %% - prints % character since % already acts as a specifier
 %n - prints a blank space, useful for proper texts
 
-Arithmetic Operators in C:
+### Arithmetic Operators in C: <br>
 ++ / Increment / increases value of a variable by 1 (written like ++variable in a line of code, strange ik)
 -- / Decrement / decreases value of a variable by 1 (written same as above)
 % / Modulus / returns the remainder of a division
 
-Logical Operators in C:
+### Logical Operators in C: <br>
 && / AND / x > 3 && x < 10 -- returns 1 if both statements are true
 || / OR / x > 3 || x < 4 -- returns 1 if one of the statements is true
 ! / NOT / !(x > 3 && x < 10) / reverses the result, returns 0 if it was 1
 
-Info regarding printing:
+### Info regarding printing: <br>
 1. you can print values directly in printf without storing them in variables:
 	#printf("My favorite number is: %d", 15);
 2. you can limit the amount of zeros in a decimal:
@@ -46,7 +45,7 @@ Info regarding printing:
    printf("%.2f", lol)
 so this will print: 3.50, because you limited the decimals to 2 only. if you put 100 into the limiter it will print out 100 decimals
 
-Info regarding math operators, math and integers in general:
+### Info regarding math operators, math and integers in general: <br>
 1. math operations with variables are simple as in Lua, you can just have 2 int variables holding 5 and 10,
 then add them up in a separate variable
    int x = 5;
@@ -68,19 +67,19 @@ Explicit Conversion - manual conversion of types by the user
 Implicit Converison - automatic conversion of types by compiler, e.g. when assigning an int value to a float type.
    float myFloat = 9; (this will print 9.000000 because of float type influencing int)
 
-Info regarding booleans:
+### Info regarding booleans: <br>
 1. Booleans can only be accessed by including a header file <stdbool.h>
 2. Is declared by: bool isCodingFun = true;
 3. booleans are only returned as 1(true) or 0(false). therefore &d can be used to print a bool.
 
-Signed and Unsigned Integers:
-// Signed can store both positive and negative values (-1 and below, 0 and above)
-// Unsigned cannot store non-negative values (0 and up)
+### Signed and Unsigned Integers: <br>
+Signed can store both positive and negative values (-1 and below, 0 and above)
+Unsigned cannot store non-negative values (0 and up)
 
-How to do For Loops:
-- for (statement1, statement2; statement3) {
+### How to do For Loops: <br>
+> for (statement1, statement2; statement3) {
   // code goes here
-}
-Statement 1 - is executed only a SINGLE time before the execution of the code block
-Statement 2 - defines the condition for executing the code block
-Statement 3 - is executed everytime after the code block has been executed
+} <br>
+  Statement 1 - is executed only a SINGLE time before the execution of the code block <br>
+  Statement 2 - defines the condition for executing the code block <br>
+  Statement 3 - is executed everytime after the code block has been executed <br>
