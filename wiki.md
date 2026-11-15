@@ -77,7 +77,7 @@ Signed can store both positive and negative values (-1 and below, 0 and above)
 Unsigned cannot store non-negative values (0 and up)
 
 ### How to do For Loops: <br>
-> for (statement1, statement2; statement3) {
+for (statement1, statement2; statement3) {
   // code goes here
 } <br>
   Statement 1 - is executed only a SINGLE time before the execution of the code block <br>
